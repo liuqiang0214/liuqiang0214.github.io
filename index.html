@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小强网页测试 - www.x6d.com</title>
+    <meta name="description" content="网站介绍">
+    <meta name="keywords" content="关键词">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/viewer.min.css">
+</head>
+
+<body>
+
+    <!-- ALL -->
+    <div id="Indexbox">
+
+        <!-- 左侧菜单按钮 -->
+        <div class="leftBar">
+            <div class="leftBar-ButtomMe" onclick="MeClick(true)"></div>
+            <div class="leftBar-ButtomMenu" id="leftBar-ButtomMenu" onclick="MenuClick(true)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+            <div class="leftBar-ButtomPages" id="menuPages" onclick="PagesClick(true)"></div>
+        </div>
+
+        <!-- 左侧拉出菜单 我 -->
+        <div class="leftBar-Me" id="leftBar-Me">
+            <div class="leftBar-ButtomClose" onclick="MeClick(false)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+            <div class="img">
+                <img src="https://q1.qlogo.cn/g?b=qq&nk=1656071287&s=640" alt="N0ts">
+            </div>
+            <div class="introduction">
+                <h1>N0ts</h1>
+                <p>大专的咸鱼，喜欢睡觉，刷抖音，以及我公主般的女朋友。</p>
+                <p>即使前方的路看似绝境，也要有硬生生给自己开出一条路的勇气</p>
+            </div>
+            <div class="connect">
+                <a href="/">关于</a>
+                <a href="/">留言</a>
+            </div>
+        </div>
+
+        <!-- 左侧拉出菜单 顶部菜单 -->
+        <div class="leftBar-titleMenu" id="leftBar-titleMenu">
+            <div class="leftBar-ButtomClose" onclick="MenuClick(false)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+            <h1>导航</h1>
+            <ul>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">首页</a>
+                </li>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">关于我</a>
+                </li>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">我的垃圾项目</a>
+                </li>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">我的爱人</a>
+                </li>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">笔记</a>
+                </li>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">博客</a>
+                </li>
+                <li>
+                    <a href="https://www.x6d.com/" target="_blank" onclick="MenuClick(false)">留言</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 左侧拉出菜单 页面 -->
+        <div class="leftBar-Pages" id="leftBar-Pages">
+            <div class="leftBar-ButtomClose" onclick="PagesClick(false)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+            <div class="leftBar-Pages-box">
+                <h1>页面</h1>
+                <div class="leftBar-Pages-optine" id="leftBar-Pages-optine1"
+                    onclick="pages_title_option_click(1 ,false);PagesClick(false)">
+                    <img src="./images/stuck_out_tongue.png" alt="stuck_out_tongue">
+                    <p>hello world.md</p>
+                </div>
+                <div class="leftBar-Pages-optine" id="leftBar-Pages-optine2"
+                    onclick="pages_title_option_click(2, false);PagesClick(false)">
+                    <img src="./images/stuck_out_tongue_closed_eyes.png" alt="stuck_out_tongue_closed_eyes">
+                    <p>hello world.md</p>
+                </div>
+                <div class="leftBar-Pages-optine" id="leftBar-Pages-optine3"
+                    onclick="pages_title_option_click(3 ,false);PagesClick(false)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>hello world.md</p>
+                </div>
+                <div class="leftBar-Pages-optine" id="leftBar-Pages-optine4"
+                    onclick="pages_title_option_click(4 ,false);PagesClick(false)">
+                    <img src="./images/yum.png" alt="yum">
+                    <p>hello world.md</p>
+                </div>
+                <div class="leftBar-Pages-optine" id="leftBar-Pages-optine5"
+                    onclick="pages_title_option_click(5 ,false);PagesClick(false)">
+                    <img src="./images/icecream.png" alt="icecream">
+                    <p>My Life.md</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页面版块1 -->
+        <div class="pages" id="pages">
+
+            <!-- 页面选项卡 -->
+            <div class="pages-title">
+                <div class="pages-title-option pages-title-option-click" id="pages-title-option1"
+                    onclick="pages_title_option_click(1, true)">
+                    <img src="./images/stuck_out_tongue.png" alt="stuck_out_tongue">
+                    <p>hello world.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option2" onclick="pages_title_option_click(2, true)">
+                    <img src="./images/stuck_out_tongue_closed_eyes.png" alt="stuck_out_tongue_closed_eyes">
+                    <p>hello world.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option3" onclick="pages_title_option_click(3, true)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>hello world.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option4" onclick="pages_title_option_click(4, true)">
+                    <img src="./images/yum.png" alt="yum">
+                    <p>hello world.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option5" onclick="pages_title_option_click(5, true)"
+                    style="display: none;">
+                    <img src="./images/icecream.png" alt="icecream">
+                    <p>hello world.md</p>
+                </div>
+            </div>
+
+            <!-- 页面 -->
+            <div class="pages-text pages-text-show" id="pages-text1">
+                <div class="pages-text-box">
+                    <h1>你好，我是小强<br />喜欢睡觉，刷抖音，和哪个她。</h1>
+                    <div class="pages-text-box-img">
+                        <img src="./images/lovexhj.jpg" alt="lovexhj" class="n0ts-img">
+                        <h6>❤我自己写的</h6>
+                    </div>
+                    <p>小时候总是不爱去旅行，但现在却相反；</p>
+                    <p>很喜欢去外面旅行，欣赏风景。</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/me1.jpg" alt="me1" class="n0ts-img">
+                        <h6>不小心抓拍</h6>
+                    </div>
+                    <p>用照片记录下某一瞬间的美景，让开心的时刻得以永久保存。</p>
+                    <p>也算是爱好摄影，想给自己留下一个个美好回忆。</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/fj1.jpg" alt="fj1" class="n0ts-img">
+                        <h6>某次随手抓拍</h6>
+                    </div>
+                    <p>当然，我也很爱美女。</p>
+                    <p>我不是什么好人，但是很爱她，</p>
+                    <p>两个人，一起走。</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/me2.jpg" alt="me2" class="n0ts-img">
+                        <h6>起飞！</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text2">
+                <div class="pages-text-box">
+                    <h1>test2</h1>
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text3">
+                <div class="pages-text-box">
+                    <h1>test3</h1>
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text4">
+                <div class="pages-text-box">
+                    <h1>test4</h1>
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text5">
+                <div class="pages-text-box">
+                    <h1>我与她</h1>
+                    <p>2026-02-28</p>
+                    <p>故事开始</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/love1.jpg" alt="love1" class="n0ts-img">
+                        <h6>我们的第一张合影</h6>
+                    </div>
+                    <p>截止现在</p>
+                    <p id="lovetime1">d</p>
+                    <p>有你的每一天都如糖果一样甜</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/love2.jpg" alt="love2" class="n0ts-img">
+                        <h6>看电影日常</h6>
+                    </div>
+                    <a href="https://lovexhj.cn" class="text-a" target="_blank">More?</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页面版块2 -->
+        <div class="pages pages2" id="pages2">
+
+            <!-- 页面选项卡 -->
+            <div class="pages-title pages-title2">
+                <div class="pages-title-option pages-title-option-click">
+                    <img src="./images/icecream.png" alt="icecream">
+                    <p>My Life.md</p>
+                </div>
+            </div>
+
+            <!-- 页面 -->
+            <div class="pages-text pages-text-show">
+                <div class="pages-text-box pages-text-box2">
+                    <h1>我与她</h1>
+                    <p>2026-02-28</p>
+                    <p>故事开始</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/love1.jpg" alt="love1" class="n0ts-img">
+                        <h6>我们的第一张合影</h6>
+                    </div>
+                    <p>截止现在</p>
+                    <p id="lovetime2"></p>
+                    <p>有你的每一天都如糖果一样甜</p>
+                    <div class="pages-text-box-img">
+                        <img src="./images/love2.jpg" alt="love2" class="n0ts-img">
+                        <h6>看电影日常</h6>
+                    </div>
+                    <a href="https://lovexhj.cn" class="text-a" target="_blank">More?</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="./js/N0ts.js"></script>
+    <script src="./js/viewer.min.js"></script>
+    
+    <!-- 我直接把恋爱计时写在这里，不用依赖 lovetime.js -->
+    <script>
+        // 在一起时间：2026-02-28 00:00:00
+        var together = new Date(2026, 1, 28, 0, 0, 0);
+
+        function lovetime() {
+            var now = new Date();
+            var diff = now - together;
+
+            var sec = Math.floor(diff / 1000);
+            var min = Math.floor(sec / 60);
+            var hour = Math.floor(min / 60);
+            var day = Math.floor(hour / 24);
+            var year = Math.floor(day / 365);
+
+            day %= 365;
+            hour %= 24;
+            min %= 60;
+            sec %= 60;
+
+            var str = "我们已经在一起 " + year + "年" + day + "天" + hour + "小时" + min + "分钟" + sec + "秒啦";
+
+            document.getElementById("lovetime1").innerHTML = str;
+            document.getElementById("lovetime2").innerHTML = str;
+        }
+
+        setInterval(lovetime, 1000);
+        lovetime();
+        resize();
+    </script>
+</body>
+
+</html>
